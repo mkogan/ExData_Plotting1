@@ -5,7 +5,7 @@ plot4<-function(){
   png(file="plot4.png")
   par(mfrow=c(2,2))
   plot(y=b$Global_active_power,x=b$DateTime, xlab="",ylab="Global Active Power", type="l")
-  plot(b$DateTime,b$Voltage, pch=-1, xlab="datetime", ylab="Voltage", type="l")
+  plot(b$DateTime,b$Voltage, xlab="datetime", ylab="Voltage", type="l")
   plot(x=b$DateTime,y=b$Sub_metering_1, xlab="",ylab="Energy sub metering", type="l")
   lines(y=b$Sub_metering_2,x=b$DateTime, col="red")
   lines(y=b$Sub_metering_3,x=b$DateTime, col="blue")
